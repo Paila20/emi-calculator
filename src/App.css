@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
+/* Light Theme (Default) */
+body {
+  background-color: #ffffff;
+  color: #000000;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Dark Theme */
+[data-theme='dark'] body {
+  background-color: #000000 !important;
+  color: #ffffff !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+[data-theme='dark'] .input {
+  background-color: #555555 !important;
+  color: #ffffff !important;
+  border-color: #777777 !important;
+}
+
+[data-theme='dark'] .form-item {
+  margin-bottom: 16px;
+}
+
+[data-theme='dark'] .ant-form-item-control.has-error .input {
+  border-color: #ff4d4f !important;
+}
+
+[data-theme='dark'] .ant-form-item-label > label,
+[data-theme='dark'] h2,
+[data-theme='dark'] label {
+  color: #ffffff !important;
+}
+
+/* Table Styles */
+[data-theme='dark'] .table {
+  border-color: #555555 !important;
+}
+
+[data-theme='dark'] thead th {
+  background-color: #333333 !important;
+  color: #ffffff !important;
+}
+
+[data-theme='dark'] tbody tr {
+  background-color: #444444 !important;
+  color: #ffffff !important;
+}
+
+.table-responsive {
+
+  min-width: 300px ;
+}
+
+@media (max-width: 377.98px) {
+  .table {
+    font-size: 0.575rem;
+    min-width: 300px;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  .table th, .table td {
+    padding: 0.05rem; 
   }
 }
