@@ -14,7 +14,7 @@ https://github.com/Paila20/emi-calculator.git
 
 
 Navigate to the project directory
-cd emi-
+cd emi-calculator
 
 
 # Install dependencies:
